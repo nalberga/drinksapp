@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { login } from './UserFunctions'
+
 
 class Login extends Component {
   constructor() {
@@ -26,11 +26,6 @@ class Login extends Component {
     }
     console.log(user);
 
-    // login(user).then(res => {
-    //   if (res) {
-    //     this.props.history.push(`/profile`)
-    //   }
-    // })
   }
 
   render() {

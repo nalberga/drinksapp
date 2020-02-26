@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { register } from './UserFunctions'
 
 class Register extends Component {
   constructor() {
@@ -29,9 +28,6 @@ class Register extends Component {
       password: this.state.password
     }
       console.log(newUser);
-    // register(newUser).then(res => {
-    //   this.props.history.push(`/login`)
-    // })
   }
 
   render() {

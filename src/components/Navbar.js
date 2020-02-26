@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
+
 import { Link, withRouter } from 'react-router-dom'
 
 class Home extends Component {
   logOut(e) {
     e.preventDefault()
-    //Clear user token from localStorage
-    localStorage.removeItem('usertoken')
-    this.props.history.push(`/`)
-  }
+   }
 
   render() {
     const loginRegLink = (
