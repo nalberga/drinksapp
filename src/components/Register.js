@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { registerUser } from '../api/register';
 
 class Register extends Component {
   constructor() {
@@ -19,15 +20,16 @@ class Register extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
   onSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     const newUser = {
       first_name: this.state.first_name,
       last_name: this.state.last_name,
       email: this.state.email,
       password: this.state.password
-    }
-      console.log(newUser);
+    };
+
+    registerUser(newUser);
   }
 
   render() {
@@ -95,4 +97,4 @@ class Register extends Component {
   }
 }
 
-export default Register
+export default Register;
