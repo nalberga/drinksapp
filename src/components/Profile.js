@@ -22,6 +22,7 @@ class Profile extends Component {
         });
     }
 
+
     render() {
         if (!this.state.loaded) {
             return <div>Loading</div>;

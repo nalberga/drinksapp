@@ -8,6 +8,3 @@ export async function getProfileData(callback) {
   });
 }
 
-export async function updateUser(user) {
-  localStorage.setItem('registerData', JSON.stringify(user));
-}
